@@ -1,24 +1,17 @@
 # sesamehr-timer
 
-## Project setup
+## Configuración de la API
+
+Inicializar las variables VUE_APP_API_BASE y VUE_APP_API_TOKEN en .env o copiar en .env.local
+## Preparar el proyecto
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+### Para desarrollo
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
+### Para producción
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
