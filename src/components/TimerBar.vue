@@ -2,7 +2,6 @@
     <Disclosure as="nav" class="bg-grey-xlight rounded-full max-w-fit px-6">
         <div class="mx-auto">
             <div class="flex items-center justify-arround h-14 gap-x-6">
-
                 <!-- timer display -->
                 <div class="text-grey-xdark">{{ hasWorked }}</div>
                 <!-- action buttons -->
@@ -13,7 +12,7 @@
                     @click="clockOut()">Salir</button>
                 <!-- employee dropdowns -->
                 <div class="absolute flex items-center relative">
-                    <Menu as="div" class=" relative border-l-2 border-grey-light pl-6">
+                    <Menu as="div" class="relative border-l-2 border-grey-light pl-6">
                         <div>
                             <!-- main employee dropdown button -->
                             <MenuButton class="flex items-center focus:outline-none">
@@ -190,7 +189,7 @@ export default {
         this.currentTime = this.workEntryData.workEntryData.startOn
         // to display
         this.hasWorked = formatUtils.formatTime(this.currentTime)
-        
+
         const workStatus = this.workEntryData.workEntryData.employee.workStatus
         this.isOnline = this.isStatusOnline(workStatus)
         if (this.isOnline) {
